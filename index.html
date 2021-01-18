@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OffersList | Test</title>
+	<style>
+		body, html{
+			font-family: arial, helvetica, sans-serif;
+			font-size: 11px;
+		}
+		.wrapper{
+			width: 90%;
+			margin: 0 auto;
+		}
+		#header #menu{
+			margin-top: 10px;
+		}
+		#header #menu ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			clear: both;
+			overflow: hidden;
+			background-color: darkblue;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			padding: 4px 0;
+		}
+		#header #menu ul li{
+			float: left;
+		}
+		#header #menu ul li a{
+			display: block;
+			padding: 2px 10px;
+			color: #fff;
+			text-decoration: none;
+			font-size: 1em;
+		}
+		#header #menu ul li + li a{
+			border-left: 1px solid #ccc; 
+		}
+		#logo img{
+			display: block;
+		}
+
+		#content > h1{
+			color: darkgreen;
+			border-bottom: 1px dotted darkblue;
+			margin-bottom: 1em;
+		}
+		
+		#offerslist tr.offer .thumb{
+			height: 65px;
+			width: 65px;
+		}
+		#offerslist thead tr{
+			background-color: darkblue;
+		}
+		#offerslist th{
+			color: #fff;
+			padding: 4px 8px;
+		}
+		#offerslist th.title{
+			text-align: left;
+		}
+		#offerslist .post,
+		#offerslist .reg,
+		#offerslist .time{
+			width: 12%;
+			text-align: center;
+		}
+		
+		#offerslist td:not([class]){
+			vertical-align: top;
+			padding: 5px 8px;
+		}
+		#offerslist td.reg,
+		#offerslist td.time,
+		#offerslist td.post{
+			border-left: 1px dotted #ccc;
+		}
+	</style>
+	<script>
+		var offers_list= [
+				['Nov 27, 2015'],
+				['Nov 20, 2015'],
+				['Nov 10, 2015'],
+				['Nov 12, 2015'],
+				['Nov 14, 2015'],
+				['Nov 1, 2015'],
+				['Nov 9, 2015'],
+				['Nov 28, 2015'],
+				['Nov 90, 2015'],
+				['Nov 31, 2015']
+		];
+		offers_list[6]='Dic 21, 2015'
+	</script>
+</head>
+<body>
+
+	
+	
+	<div id="header">
+		<div id="logo"><img src="images/logo.png" alt="Logo of the brand"></div>
+		<nav id="menu">
+			<ul>
+				<li><a href="#">Lorem</a></li>
+				<li><a href="#">Tempore</a></li>
+				<li><a href="#">Sed</a></li>
+				<li><a href="#">Maiores</a></li>
+				<li><a href="#">Impedit</a></li>
+				<li><a href="#">Earum</a></li>
+				<li><a href="#">Cupiditate</a></li>
+				<li><a href="#">Fuga</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<div id="main" class="wrapper">	
+		<div id="content">
+			
+			<h1>Important Offers List</h1>
+		
+			<div id="offerslist">
+				<table>
+					<thead>
+						<tr>
+							<th colspan="2" class="title">Offer</th>
+							<th class="reg">Registration</th>
+							<th class="time">Time Remaining</th>
+							<th class="post">Post Date</th>
+						</tr>
+					</thead>
+						
+					<tbody>
+						<tr data-offer="1" class="offer">
+							<td class="thumb"><img src="images/foto1.jpg" alt="image for offer one"></td>
+							<td>
+								<div><b><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, reprehenderit.</a></b></div>
+								<div><span class="fCartContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, molestias, ducimus! Qui, quia, beatae, voluptas illum non explicabo fuga quo ex neque aperiam repellat adipisci cum vitae perferendis labore obcaecati?</span></div>
+							</td>
+							<td class="reg"><a href="#">Register Now</a></td>
+							<td class="time">Ongoing</td>
+							<td class="post"></td>
+						</tr>
+						<tr data-offer="2" class="offer">
+							<td class="thumb"><img src="images/foto2.jpg" alt="image for offer two"></td>
+							<td>
+								<div><b><a href="#">Labore et inventore incidunt nobis nisi adipisci omnis eius libero!</a></b></div>
+								<div><span class="fCartContent">Porro, voluptate ipsam est assumenda quam debitis accusamus soluta praesentium dolorum ab explicabo in ipsa alias cumque nesciunt animi repellendus sit error laudantium molestias. Labore aspernatur aliquam eaque laboriosam excepturi?</span></div>
+							</td>
+							<td class="reg"><a href="#">Register Now</a></td>
+							<td class="time">Ongoing</td>
+							<td class="post"></td>
+						</tr>
+						<tr data-offer="3" class="offer">
+							<td class="thumb"><img src="images/foto3.jpg" alt="image for offer three"></td>
+							<td>
+								<div><b><a href="#">Sint ratione quos debitis et eius nam itaque optio repudiandae.</a></b></div>
+								<div><span class="fCartContent">Cum, consectetur, iusto, adipisci natus repudiandae provident quo ut obcaecati quibusdam officiis quod quam praesentium accusamus ad reiciendis assumenda enim et sed quidem odio voluptate iure saepe optio eveniet nobis!</span></div>
+							</td>
+							<td class="reg"><a href="#">Register Now</a></td>
+							<td class="time">Ongoing</td>
+							<td class="post"></td>
+						</tr>
+						<tr data-offer="4" class="offer">
+							<td class="thumb"><img src="images/foto4.jpg" alt="image for offer four"></td>
+							<td>
+								<div><b><a href="#">Nemo, ad nesciunt aspernatur enim earum sint aliquam quam amet.</a></b></div>
+								<div><span class="fCartContent">Nam, non est dolorum dolores eaque vitae enim omnis voluptatem. Repudiandae, nihil voluptatibus in voluptates aliquid mollitia modi sed incidunt ducimus fuga veniam voluptatem nostrum. Distinctio, ea veniam adipisci. Vitae?</span></div>
+							</td>
+							<td class="reg"><a href="#">Register Now</a></td>
+							<td class="time">Ongoing</td>
+							<td class="post"></td>
+						</tr>
+						<tr data-offer="5" class="offer">
+							<td class="thumb"><img src="images/foto5.jpg" alt="image for offer five"></td>
+							<td>
+								<div><b><a href="#">Cupiditate natus debitis quam incidunt quos quasi eum iusto sint.</a></b></div>
+								<div><span class="fCartContent">Omnis, optio vel non eaque facilis dolorum iste. Aut, explicabo, rem, ea, ipsum illo minus doloremque fugit nisi iure ipsa numquam vero accusamus. Ad, porro, laboriosam rem ut delectus dicta!</span></div>
+							</td>
+							<td class="reg"><a href="#">Register Now</a></td>
+							<td class="time">Ongoing</td>
+							<td class="post"></td>
+						</tr>
+						<tr data-offer="6" class="offer">
+							<td class="thumb"><img src="images/foto6.jpg" alt="image for offer six"></td>
+							<td>
+								<div><b><a href="#">Odio delectus incidunt dolores alias aliquam similique perspiciatis praesentium consectetur.</a></b></div>
+								<div><span class="fCartContent">Fuga, quos, nihil accusamus voluptatibus excepturi pariatur hic sunt rem vel necessitatibus explicabo voluptate cumque eum error amet adipisci minima molestias et tempore tenetur? Veniam, ex necessitatibus accusantium voluptas nobis!</span></div>
+							</td>
+							<td class="reg"><a href="#">Register Now</a></td>
+							<td class="time">Ongoing</td>
+							<td class="post"></td>
+						</tr>
+						<tr data-offer="7" class="offer">
+							<td class="thumb"><img src="images/foto7.jpg" alt="image for offer seven"></td>
+							<td>
+								<div><b><a href="#">Assumenda, vitae quibusdam accusamus nostrum voluptatibus. Sequi, eius expedita sit.</a></b></div>
+								<div><span class="fCartContent">Aliquid, facilis beatae neque aspernatur! Quis, iste, tempore obcaecati ut tenetur quam eaque magnam laborum dolorum accusantium provident recusandae inventore alias facere voluptate at facilis dolores assumenda accusamus quas ipsum.</span></div>
+							</td>
+							<td class="reg"><a href="#">Register Now</a></td>
+							<td class="time">Ongoing</td>
+							<td class="post"></td>
+						</tr>
+						<tr data-offer="8" class="offer">
+							<td class="thumb"><img src="images/foto8.jpg" alt="image for offer eight"></td>
+							<td>
+								<div><b><a href="#">Ad, libero veritatis commodi veniam fuga quod quae doloribus id.</a></b></div>
+								<div><span class="fCartContent">Blanditiis, quo, quaerat, excepturi doloribus reprehenderit quisquam iure laboriosam culpa pariatur consequatur asperiores aliquam ducimus sapiente quasi tenetur sequi labore aut sed error dolore aperiam illo eligendi vel molestias voluptate!</span></div>
+							</td>
+							<td class="reg"><a href="#">Register Now</a></td>
+							<td class="time">Ongoing</td>
+							<td class="post"></td>
+						</tr>
+						<tr data-offer="9" class="offer">
+							<td class="thumb"><img src="images/foto9.jpg" alt="image for offer nine"></td>
+							<td>
+								<div><b><a href="#">Commodi, sed quo id recusandae pariatur provident cupiditate molestiae voluptas!</a></b></div>
+								<div><span class="fCartContent">Harum, adipisci veniam architecto impedit itaque commodi vitae facere est ipsam recusandae. Dolores fugit tempore quos. Voluptates, nobis, fugiat, quia iusto enim hic ducimus quod distinctio totam repellat velit veniam.</span></div>
+							</td>
+							<td class="reg"><a href="#">Register Now</a></td>
+							<td class="time">Ongoing</td>
+							<td class="post"></td>
+						</tr>
+						<tr data-offer="10" class="offer">
+							<td class="thumb"><img src="images/foto10.jpg" alt="image for offer ten"></td>
+							<td>
+								<div><b><a href="#">Quas, vel, ipsam corporis similique maxime hic dolore voluptate harum!</a></b></div>
+								<div><span class="fCartContent">Dolor, itaque, perferendis, odio consectetur reprehenderit qui saepe voluptatum facere explicabo ullam culpa asperiores voluptate eum debitis fugiat totam earum in ab aspernatur ipsum maxime doloribus quas omnis enim tempora?</span></div>
+							</td>
+							<td class="reg"><a href="#">Register Now</a></td>
+							<td class="time">Ongoing</td>
+							<td class="post"></td>
+						</tr>
+
+					</tbody>
+				</table>
+				
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script>
+		$('#offerslist .offer').each(function(key, item){
+			var offer_id = parseInt( $(this).data('offer') ) - 1;
+			
+			$(item).find('td.post').text(offers_list[offer_id]);
+		})
+		$("tbody tr:nth-child(1)").insertAfter("tbody tr:nth-child(8)");
+	</script>
+	
+</body>
+</html>
